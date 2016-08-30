@@ -1,0 +1,17 @@
+{
+  "name": "gulp-bower-stream",
+  "version": "0.0.0",
+  "description": "Get gulp bower.json stream.",
+  "homepage": "https://github.com/afeiship/gulp-bower-stream",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-main-bower-files": "^1.5.3"
+  }
+}
