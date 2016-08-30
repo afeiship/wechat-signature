@@ -11,6 +11,7 @@
   "devDependencies": {
     "del": "^2.2.1",
     "gulp": "^3.9.1",
+    "gulp-filter": "^4.0.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-main-bower-files": "^1.5.3"
   }
