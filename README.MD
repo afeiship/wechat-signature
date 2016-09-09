@@ -22,12 +22,16 @@ npm install --save-dev gulp-bower-stream
   });
 
 
-  var gulpBowerStream =$.bowerStream({filter:'**'});
+  var bowerStream =$.bowerStream({filter:'**'});
+  var cssStream = $.bowerStream({filter:'**/*.css'});
+  var jsStream = $.bowerStream({filter:'**/*.js'});
+
+  
   gulp.task('inject-bower', function() {
     return gulp.src(path.join(config.path.src, './index.html'))
-      .pipe($.inject(gulpBowerStream,{name:'bower'}))
+      .pipe($.inject(bowerStream,{name:'bower'}))
       .pipe(gulp.dest('dist'));
   });
-  
+
 }());
 ```
