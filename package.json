@@ -51,5 +51,11 @@
       ],
       "@babel/preset-typescript"
     ]
+  },
+  "dependencies": {
+    "node-cache": "^5.1.2",
+    "node-fetch": "2.6.7",
+    "querystring": "^0.2.1",
+    "sha1": "^1.1.1"
   }
 }

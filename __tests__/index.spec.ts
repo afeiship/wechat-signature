@@ -1,7 +1,10 @@
-import fn from '../src';
+import WechatSign from '../src';
 
 describe('api.basic', () => {
-  test('normail single value case', () => {
-    expect(fn({ rel: true })).toBe(undefined);
+  test('appid/secret from env', async () => {
+    // WECHAT_APP_ID, WECHAT_APP_SECRET from `env`
+    const res = await WechatSign.get('http://www.baidu.com');
+    console.log('🧰 res: ', res);
+    expect(typeof res.signature).toBe('string');
   });
 });
