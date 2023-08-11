@@ -1,6 +1,6 @@
 {
   "name": "@jswork/wechat-signature",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Make it easier to get wechat access_token, jsapi_ticket and sign url.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
