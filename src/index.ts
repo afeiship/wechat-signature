@@ -45,7 +45,7 @@ class WechatSignature {
     const cache = this.cache.get('db_access_token');
     if (cache) return cache;
     const freshAccessToken = await this.getFreshAcessToken();
-    this.cache.set('db_access_token', freshAccessToken, freshAccessToken.expires_in);
+    this.cache.set('db_access_token', freshAccessToken, freshAccessToken.expires_in - 60 * 10);
     return freshAccessToken;
   }
 
