@@ -13,9 +13,24 @@ npm install @jswork/wechat-signature
 
 ## usage
 ```js
-import wechatSignature from '@jswork/wechat-signature';
+import WechatSignature from '@jswork/wechat-signature';
 
-// usage goes here.
+const wechatSignature = new WechatSignature({
+  appId: 'wx1231312314',
+  appSecret: 'eWsJGHef00IzNpDkenFEUOLAvAgYHe9F'
+});
+
+const sign = await wechatSignature.get('https://www.baidu.com');
+
+/*
+{
+  "appId": "wx1231312314",
+  "timestamp": 1691760434,
+  "nonceStr": "ibt50tqybof",
+  "signature": "0eeaf6427085c1ba8d22240a94818167293783df",
+  "url": "https://www.baidu.com"
+}
+*/
 ```
 
 ## license
