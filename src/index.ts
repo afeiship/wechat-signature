@@ -80,11 +80,11 @@ class WechatSignature {
     };
   }
 
-  getNonceStr() {
+  private getNonceStr() {
     return Math.random().toString(36).substring(2, 15);
   }
 
-  getTimestamp() {
+  private getTimestamp() {
     return parseInt((Date.now() / 1000).toString(), 10);
   }
 }
