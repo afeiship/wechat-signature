@@ -49,7 +49,7 @@ class WechatSignature {
     return freshAccessToken;
   }
 
-  // step1: 区取 access_token
+  // step1: get access_token
   async getFreshAcessToken() {
     const { appId, appSecret } = this.config;
     const url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appId}&secret=${appSecret}`;
